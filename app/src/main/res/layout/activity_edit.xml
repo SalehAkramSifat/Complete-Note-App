@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditActivity"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:background="@drawable/home_top"
+        />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Edit Note."
+        android:textColor="#013AC8"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/updatedone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:id="@+id/updatetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar"
+        android:hint="Enter Note Title"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/main_bac"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/updatemainBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/updatetitle"
+        android:hint="write something"
+        android:gravity="start"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/main_bac"/>
+</RelativeLayout>
